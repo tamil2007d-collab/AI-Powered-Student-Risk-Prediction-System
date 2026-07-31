@@ -52,16 +52,26 @@ student-risk-prediction/
 
 ## 🛠️ Installation
 
-```bash
-# 1. Clone / enter the project
-cd student-risk-prediction
+> **No need to copy/paste any `venv` folder — that's machine-specific.**
+> The repo ships with `requirements.txt` plus one-click setup scripts that rebuild
+> the environment for you in seconds.
 
-# 2. (Recommended) create a virtual environment
+```bash
+# 1. Clone the repository
+git clone https://github.com/tamil2007d-collab/AI-Powered-Student-Risk-Prediction-System.git
+cd AI-Powered-Student-Risk-Prediction-System
+
+# 2. Automatic setup (recommended)
+setup.bat              # Windows  (double-click, or run in a terminal)
+bash setup.sh          # macOS / Linux
+```
+
+### Manual setup (optional)
+
+```bash
 python -m venv venv
 venv\Scripts\activate          # Windows
 source venv/bin/activate       # macOS / Linux
-
-# 3. Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -74,7 +84,7 @@ pip install -r requirements.txt
 python train.py
 
 # 2. Launch the dashboard
-streamlit run app.py
+streamlit run app.py          # or double-click run.bat on Windows
 ```
 
 The app opens at `http://localhost:8501`. If `model.pkl` is missing, the app auto-trains on first load.
